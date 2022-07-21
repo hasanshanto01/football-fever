@@ -39,11 +39,15 @@ main {
     color: white;
 }
 
+.view-btn {
+    display: none;
+}
+
 /* header section styles */
 
 .title {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background-color: var(--mod-black);
     display: flex;
     align-items: center;
@@ -83,7 +87,7 @@ main {
 
 .title-img>img {
     width: 100%;
-    height: 58vh;
+    height: 68vh;
 }
 
 /* main section styles */
@@ -133,7 +137,7 @@ main {
 
 .transfer-card {
     width: 100%;
-    height: 250px;
+    /* height: 250px; */
     display: flex;
     flex-direction: column;
     border: 1px solid gray;
@@ -143,6 +147,7 @@ main {
 
 .card-content {
     margin-left: 10px;
+    margin-bottom: 15px;
 }
 
 .card-img>img {
@@ -202,6 +207,12 @@ main {
     font-size: 14px;
 }
 
+.info-1,
+.info-2 {
+    display: flex;
+    gap: 20px;
+}
+
 .social-icon {
     display: flex;
     gap: 30px;
@@ -210,4 +221,132 @@ main {
 .fa-brands {
     color: rgb(99, 21, 172);
     font-size: 25px;
+}
+
+/* media queries */
+
+/* for mobiles */
+
+@media only screen and (max-width:550px) {
+    .title {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .title-content {
+        width: 100%;
+        height: 45vh;
+        text-align: center;
+    }
+
+    #ellipsis {
+        text-overflow: ellipsis;
+    }
+
+    .title-img {
+        width: 100%;
+        left: 5px;
+    }
+
+    .title-img>img {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        margin-bottom: 40px;
+    }
+
+    .sidebar-item {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        border: 1px solid gray;
+    }
+
+    .transfer-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-section {
+        height: 500px;
+    }
+
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-1,
+    .info-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* for tablets */
+
+@media only screen and (min-width: 551px) and (max-width:900px) {
+    .title {
+        height: 80vh;
+    }
+
+    .title-img>img {
+        height: 78vh;
+    }
+
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+
+    }
+
+    .sidebar-item {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        border: 1px solid gray;
+    }
+
+    .transfer-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #card {
+        display: none;
+    }
+
+    .view-btn {
+        display: inline;
+        margin-top: 30px;
+    }
+
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
 }
