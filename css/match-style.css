@@ -1,0 +1,42 @@
+/* match section */
+#match {
+    background-color: var(--mod-crimson);
+}
+
+.match-section {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.match-card {
+    width: 100%;
+    height: 150px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.match-img {
+    display: flex;
+    align-items: center;
+}
+
+.germany-flag>img,
+.france-flag>img {
+    width: 100%;
+}
+
+.match-content {
+    margin-top: 10px;
+}
+
+.match-content>p {
+    margin-top: 5px;
+    font-size: 14px;
+}

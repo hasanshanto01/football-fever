@@ -28,6 +28,7 @@ main {
 .container {
     width: 85%;
     margin: 0 auto;
+    /* background-color: blue; */
 }
 
 .btn {
@@ -117,6 +118,10 @@ main {
 .sidebar>a {
     text-decoration: none;
     color: black;
+}
+
+#blog {
+    background-color: var(--mod-crimson);
 }
 
 .transfer-section {
