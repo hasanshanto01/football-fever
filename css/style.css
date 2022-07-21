@@ -163,3 +163,9 @@ main {
 .fa-comment-dots {
     margin-right: 5px;
 }
+
+/* footer section styles */
+.footer-section {
+    height: 300px;
+    background-color: var(--mod-black);
+}
