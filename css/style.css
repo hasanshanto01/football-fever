@@ -53,9 +53,10 @@ main {
 
 .title-content {
     width: 50%;
+    /* height: 60vh; */
     /* background-color: blue; */
     color: white;
-    padding: 10px;
+    padding: 15px;
 }
 
 .title-content>h1 {
@@ -74,10 +75,91 @@ main {
 
 .title-img {
     width: 50%;
-    /* height: 300px; */
+    /* height: 60vh; */
     /* background-color: yellow; */
     position: absolute;
-    bottom: -14px;
-    right: 0;
+    bottom: -19px;
+    right: 15px;
+    padding: 15px;
+}
+
+.title-img>img {
+    width: 100%;
+    height: 58vh;
+}
+
+/* main section styles */
+.main-section {
+    margin: 40px 0;
     padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar {
+    width: 25%;
+    height: 200px;
+    background-color: var(--mod-black);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    padding: 20px;
+}
+
+.sidebar-item {
+    background-color: white;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.sidebar>a {
+    text-decoration: none;
+    color: black;
+}
+
+.transfer-section {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.transfer-card {
+    width: 100%;
+    height: 250px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 10px; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.card-content {
+    margin-left: 10px;
+}
+
+.card-img>img {
+    width: 100%;
+}
+
+.transfer-btn {
+    padding: 2px 5px;
+    margin-bottom: 10px;
+}
+
+.card-info {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.fa-clock,
+.fa-comment-dots {
+    margin-right: 5px;
 }
